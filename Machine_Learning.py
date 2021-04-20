@@ -217,7 +217,7 @@ Table_Q2_val_acc_SVM.insert(0,"val_acc_SVM")
 Table_Q2_SVM.add_row(Table_Q2_val_acc_SVM)
 print(Table_Q2_SVM)
 
-#Prediction
+#Prediction, based on the best model SVM
 SVM = svm.SVC(C=0.9)
 SVM.fit(train_tfidf, train_df['target'])
 train_acc = SVM.score(train_tfidf, train_df['target'])
